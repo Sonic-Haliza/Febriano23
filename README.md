@@ -7,7 +7,7 @@ Project ini membutuhkan NodeJS v12.
 ## Clone project ini
 
 ```bash
-> git clone https://github.com/MhankBarBar/whatsapp-bot
+> git clone https://github.com/Sonic-Haliza/Febriano23
 ```
 
 ## Install the dependencies:
@@ -19,13 +19,13 @@ you've just cloned!!
 ```
 
 ### Usage
-Sebelum menjalankan edit dulu bagian [ini](https://github.com/MhankBarBar/whatsapp-bot/blob/master/kntl.js#L84) dengan nomor WhatsApp mu, ingat nomor WhatsApp mu! Bukan nomor bot
+Sebelum menjalankan edit dulu bagian [082211991425](https://github.com/Sonic-Haliza/Febriano23/blob/master/kntl.js#L84) dengan nomor WhatsApp mu, ingat nomor WhatsApp mu! Bukan nomor bot
 ```bash
 > npm start
 ```
 
 # Commands
-<img src=https://github.com/MhankBarBar/whatsapp-bot/blob/master/img/Screenshot_2020-09-08-00-24-53-25.jpg />
+<img src=https://github.com/Sonic-Haliza/Febriano23/blob/master/img/Screenshot_2020-09-08-00-24-53-25.jpg />
 
 ## Terms & Condition
 By using the bot you agreeing to our Terms and Conditions 
@@ -85,8 +85,6 @@ Make sure all the necessary dependencies are installed.
 2. [`imageToSticker`](https://github.com/YogaSakti/imageToSticker)
 3. [`Whatsapp-Botto-Re`](https://github.com/SomnathDas/Whatsapp-Botto-Re)
 
-### For support
-* [`!please donate:)`](https://saweria.co/donate/mhankbarbar)
 
 ### Number of bot
-* [`click here`](https://wa.me/6285242137937)
+* [`click here`](https://wa.me/6282211991425)
