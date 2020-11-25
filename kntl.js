@@ -47,7 +47,7 @@ const startServer = async (client) => {
         })
         // listening on Incoming Call
         client.onIncomingCall((call) => {
-            client.sendText(call.peerJid, 'Maaf, saya tidak bisa menerima panggilan. nelfon = block!')
+            client.sendText(call.peerJid, 'Maaf, saya tidak bisa menerima panggilan. Telfon? = block!')
             client.contactBlock(call.peerJid)
             ban.push(call.peerJid)
             fs.writeFileSync('./lib/banned.json', JSON.stringify(ban))
@@ -225,7 +225,7 @@ async function msgHandler (client, message) {
             if (args.length >= 1) {
                 var param = body.substring(body.indexOf(' '), body.length)
                 try {
-                    client.reply(from, 'Tunggu sebentar, sedang di proses..', message.id)
+                    client.reply(from, 'Sabar Braay, sedang di proses..', message.id)
                     const resp = await get.get('https://villahollanda.com/api.php?url='+ param).json()
                     console.log(resp)
                     if (resp.mediatype == 'photo') {
@@ -324,7 +324,7 @@ async function msgHandler (client, message) {
         case 'quotemaker':
             arg = body.trim().split('|')
             if (arg.length >= 3) {
-                client.reply(from, 'Tunggu yaa, sedang proses . . .', message.id) 
+                client.reply(from, 'Sabar braay, sedang proses . . .', message.id) 
                 const quotes = arg[1]
                 const author = arg[2]
                 const theme = arg[3]
@@ -373,7 +373,7 @@ async function msgHandler (client, message) {
                 hehe += '╠➥'
                 hehe += ` @${groupMem[i].id.replace(/@c.us/g, '')}\n`
             }
-            hehe += '╚═〘 Shinomiya Kaguya BOT 〙'
+            hehe += '╚═〘 F3BR14N0-BOT☣️ 〙'
             client.sendTextWithMentions(from, hehe)
             break
         case 'unban':
@@ -547,10 +547,10 @@ async function msgHandler (client, message) {
 ║
 ╠✪〘 Donate :) 〙✪════
 ╠➥!donasi
-╚═〘 Shinomiya Kaguya BOT 〙`)
+╚═〘 F3BR14N0-BOT 〙`)
             break
         case 'info':
-            client.sendText(from, 'Ini adalah program yang ditulis dalam Javascript. \n \nDengan menggunakan bot, Anda menyetujui Syarat dan Ketentuan kami \n \nSyarat dan ketentuan \n \nTeks dan nama pengguna whatsapp Anda akan disimpan di server kami selama bot aktif, data Anda akan dihapus ketika  bot menjadi offline.  Kami TIDAK menyimpan gambar, video, file audio dan dokumen yang Anda kirim.  Kami tidak akan pernah meminta Anda untuk mendaftar atau meminta kata sandi, OTP, atau PIN Anda.\n\nTerima kasih, Selamat bersenang-senang!\n\nWarning: !!! dikarenakan saya sering melihat ada orang yang menjual bot, saya informasikan kalau bot ini geratis!.')    
+            client.sendText(from, 'Ini adalah program yang ditulis dalam Javascript. \n \nDengan menggunakan bot, Anda menyetujui Syarat dan Ketentuan kami \n \nSyarat dan ketentuan \n \nTeks dan nama pengguna whatsapp Anda akan disimpan di server kami selama bot aktif, data Anda akan dihapus ketika  bot menjadi offline.  Kami TIDAK menyimpan gambar, video, file audio dan dokumen yang Anda kirim.  Kami tidak akan pernah meminta Anda untuk mendaftar atau meminta kata sandi, OTP, atau PIN Anda.\n\nTerima kasih, Selamat bersenang-senang!\n\nWarning: !!!
             break
         default:
             console.log(color('[ERROR]', 'red'), color(time, 'yellow'), 'Unregistered Command from', color(pushname))
