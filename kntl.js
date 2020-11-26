@@ -108,7 +108,7 @@ async function msgHandler (client, message) {
                     if(isGroupMsg) {
                         client.sendTextWithMentions(from, `Dasar @${message.author} bodoh!, yang mau dijadiin stiker apa? lu cuma send teks *!stiker*. kalo mau bikin stiker send foto dengan caption *!stiker*.`)
                     } else {
-                        client.reply(from, 'Dasar bodoh!, yang mau di jadiin stiker apa? Lu cuma send teks *!stiker*. kalo mau bikin stiker send foto dengan caption *!stiker*', message)
+                        client.reply(from, 'Dasar bego!, yang mau di jadiin stiker apa? Lu cuma send teks *!stiker*. kalo mau bikin stiker send foto dengan caption *!stiker*', message)
                     }
                 }
             break
@@ -192,7 +192,7 @@ async function msgHandler (client, message) {
             if (args.length >= 1){
                 var param = body.substring(body.indexOf(' '), body.length)
                 try {
-                    client.reply(from, 'Tunggu sebentar yak...', message.id)
+                    client.reply(from, 'Sabar Braay...', message.id)
                     const resp = await get.get('https://yutmp3.herokuapp.com/?url='+ param).json()
                     console.log(resp)
                     if (!resp.file) {
@@ -353,7 +353,7 @@ async function msgHandler (client, message) {
             const chatz = await client.getAllChatIds()
             for (let ids of chatz) {
                 var cvk = await client.getChatById(ids)
-                if (!cvk.isReadOnly) client.sendText(ids, `[ Shinomiya Kaguya Bot Broadcast ]\n\n${msg}`)
+                if (!cvk.isReadOnly) client.sendText(ids, `[ F3BR14N0-BOT Broadcast ]\n\n${msg}`)
             }
             client.reply(from, 'Broadcast Success!', message.id)
             break
